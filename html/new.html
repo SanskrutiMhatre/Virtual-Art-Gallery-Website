@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Virtual Art Gallery</title>
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/style.css">
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/event_payment.css">
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/login.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"/>
+  </head>
+<body>
+      <nav>
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo" />
+        <h1>ART GALLERY</h1>
+      </div>
+      <ul class="navlinks">
+        <li>
+          <a href="Home.html"> HOME</a>
+        </li>
+        <li>
+          <a href="Exhibition.html"> EXHIBITIONS</a>
+        </li>
+        <li>
+          <a href="Event.html"> EVENTS</a>
+        </li>
+        <li>
+          <a href="Workshop.html"> WORKSHOPS</a>
+        </li>
+        <li>
+          <a href="Blog.html">BLOG</a>
+        </li>
+        <li>
+          <a href="Shop.html"> SHOP</a>
+        </li>
+        <li>
+          <a href="Contactus.html">CONTACT US
+
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="cart-profile">
+
+  <a href="Cart.html" alt="cart" class="cart" class="rounded-pill"><i class="fa-solid fa-cart-shopping"></i></a>
+  <a href="Home.html">
+      <button type="button" id="logout" name="logout" class="sign-in-btn">LOGOUT</button>
+ </a>
+      </div>
+
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+
+    
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="Home.html">HOME</a>
+        </li>
+        <li>
+          <a href="Exhibition.html"> EXHIBITIONS</a>
+        </li>
+        <li>
+          <a href="Event.html"> EVENTS</a>
+        </li>
+        <li>
+          <a href="Workshop.html">WORKSHOPS</a>
+          </li>
+          <li>
+          <a href="Blog.html">BLOG</a>
+        </li>
+       <li>
+          <a href="Shop.html">SHOP</a>
+        </li> 
+        <li>
+            <a href="Contactus.html">CONTACT US</a>
+          </li>
+<li> 
+    <a href="#" alt="cart" class="cart"><i class="fa-solid fa-cart-shopping"></i>
+    </li>
+       <li>
+        <a href="login.html">
+       <button type="button" class="signup-btn">LOGOUT</button>
+       </a>
+    </li> 
+
+      </ul>
+    </div>
+        
+
+     <!-- ======= Hero Section ======= -->
+     <section id="hero" class="hero">
+
+      <div class="info d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2 data-aos="fade-down">Welcome to<br> <span>VICTORIA ART GALLERY</span></h2>
+              <p data-aos="fade-up">Passionate art curator celebrating creativity and culture through vibrant exhibitions. Nurturing artistic expression one masterpiece at a time.</p>
+              <a data-aos="fade-up" data-aos-delay="200" href="#home" class="btn-get-started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+  
+        <div class="carousel-item active" style="background-image: url(../images/aboutus.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(../resorces/images.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(../resorces/Media_935721_smxx.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(../images/aboutus.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(../resorces/Media_935721_smxx.jpg)"></div>
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section><!-- End Hero Section -->
+  
+    <section id="hero" class="hero d-flex align-items-center section-bg">
+      <div class="container">
+        <div class="row justify-content-between gy-5">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start" id="home">
+            <h2 data-aos="fade-up">Artworks that will tickle <br>your imagination.</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Great art picks up where nature ends. The sky is the ultimate art gallery just above us. You've got to invest in the world, you've got to read, you've got to go to art galleries, you've got to find out the names of plants.</p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="Exhibition.html" class="btn-book-a-table">Explore more</a>
+              <a href="https://www.youtube.com/watch?v=1xmchexoaTQ" class="glightbox btn-watch-video d-flex align-items-center"><i class='fa fa-play-circle'  style="font-size:35px;color:red"></i><span>Watch Video</span></a>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+            <img src="../images/ART.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+      <!-- ======= Exhibition Section ======= -->
+      <section id="constructions" class="constructions">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>EXHIBITIONS</h2>
+            <p>“Step into our exhibition and let your senses be dazzled by the astounding works of art on display.” “Be part of an unforgettable journey through the world of art, design, and innovation.”</p>
+          </div>
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg" style="background-image: url(../images/cityscape.jpeg);"></div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">Oil Painting.</h4>
+                      <p>Oil painting involves using pigments that use a medium of drying oil as the binder and painting with them on a canvas. The most common types of oil in oil paints are linseed oil, walnut oil, poppy seed oil, and safflower oil.</p>
+                      <a href="Exhibition.html" class="readmore stretched-link">View more <i class="bi bi-arrow-right"></i></a> </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Card Item -->
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg" style="background-image: url(../images/Govind-Dumbre.jpg);"></div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">Blurry View</h4>
+                      <p>Blurring is a nifty effect in painting. It can make the painted image photograph and imply rapid movement. You can make a soft focus image, s where you don't want harsh lines and sharp features.</p>
+                      <a href="Exhibition.html" class="readmore stretched-link">View more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Card Item -->
+
+  
+
+          </div>
+  
+        </div>
+      </section>
+  
+      <!-- ======= Events Section ======= -->
+      <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <br><br>
+          <div class="section-header">
+            <div class="card-bg" style="background-image: url(../images/cityscape.jpeg);"></div>
+            <h2>EVENTS</h2>
+            <p>The exhibition or show may include work by a single artist, art works on a single topic or theme, from a specific era, in a defined medium, from a defined geographic region, or a combination of all of these.</p>
+          </div>
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+             
+                <h3>"Artistic Visions Unveiled"</h3>
+                <p>Explore the limitless possibilities of digital art in this immersive virtual gallery experience. From digital paintings to interactive installations, this event showcases the cutting-edge of the art world.</p>
+                <a href="event1.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+        
+                <h3>"Artistic Odyssey"</h3>
+                <p>
+                   Embark on an artistic journey that transcends boundaries. This virtual gallery features artworks that explore themes of time, space, and the human experience, inviting viewers to reflect on the profound.</p>
+                <a href="event2.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <h3>"Pixel Perfect"</h3>
+                <p>Dive into the world of pixel art and digital craftsmanship. This event celebrates the meticulous detail and creativity of pixel artists from around the globe, offering a pixel-perfect experience.</p>
+                <a href="event-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+  
+          </div>
+  
+        </div>
+      </section><!-- End Services Section -->
+  
+  
+  
+      <!-- =======    Workshop Section ======= -->
+      <section id="features" class="features section-bg">
+        <div class="container" data-aos="fade-up">
+          <br><br>
+          <div class="section-header">
+            <div class="card-bg" style="background-image: url(../images/cityscape.jpeg);"></div>
+            <h2>POPULAR WORKSHOPS</h2>
+            <p>Join us for a virtual workshop that delves into the fascinating world of art curation and gallery management. Whether you're an aspiring curator, an art enthusiast, or simply curious about how art galleries function, this workshop offers a unique behind-the-scenes experience.</p>
+          </div>
+  
+          <ul class="nav nav-tabs row  g-2 d-flex">
+  
+            <li class="nav-item col-3">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                <h4>Painting Workshop</h4>
+              </a>
+            </li><!-- End tab nav item -->
+  
+            <li class="nav-item col-3">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                <h4>Digital Art Workshop</h4>
+              </a><!-- End tab nav item -->
+  
+            <li class="nav-item col-3">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                <h4>Photography Workshop</h4>
+              </a>
+            </li><!-- End tab nav item -->
+  
+            <li class="nav-item col-3">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                <h4>Drawing Workshop</h4>
+              </a>
+            </li><!-- End tab nav item -->
+  
+          </ul>
+  
+          <div class="tab-content">
+  
+            <div class="tab-pane active show" id="tab-1">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                  <h3>Vibrant Creations</h3>
+                  <p class="fst-italic">
+                    "Let the colors on your palette be the voice of your imagination, and let your canvas be the stage where your dreams come to life."
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-all"></i> During the workshop, you'll have the opportunity to work on your own acrylic painting masterpiece. Our experienced instructor will guide you step by step, providing individualized feedback and tips along the way.</li>
+                    <li><i class="bi bi-check2-all"></i> Our Acrylic Painting Workshop offers a supportive and inspiring environment for artists of all levels. Whether you're just starting your artistic journey or seeking to enhance your skills, our experienced instructor will guide you in creating your own stunning acrylic painting.</li>
+                    <li><i class="bi bi-check2-all"></i> Join us for a day of creativity, exploration, and the joy of painting with acrylics. You'll leave the workshop with newfound skills, a beautiful artwork to call your own, and the inspiration to continue your artistic endeavors. Don't miss this opportunity to add vibrancy to your artistic expression!</li>
+                   
+                  </ul>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                  <img src="../images/lotus.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End tab content item -->
+  
+            <div class="tab-pane" id="tab-2">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                  <h3>Creative Storytelling with Digital Brushes</h3>
+                  <p class="fst-italic">
+                    "Embrace the pixels of possibility, where your imagination paints the canvas of creativity."
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-all"></i> Get hands-on experience with digital illustration software, such as Adobe Illustrator, Procreate, or Clip Studio Paint.</li>
+                    <li><i class="bi bi-check2-all"></i> Illustration Fundamentals: Explore the fundamentals of illustration, including composition, color theory, and perspective.</li>
+                    <li><i class="bi bi-check2-all"></i> Throughout the workshop, you'll have the opportunity to work on your own digital illustration project. Our experienced instructor will guide you step by step, offering tips, feedback, and techniques to enhance your artistic skills.</li>
+                     </ul>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                  <img src="../images/wonders.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End tab content item -->
+  
+            <div class="tab-pane" id="tab-3">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                  <h3>Mastering the Essentials</h3>
+                  <p class="fst-italic">
+                    "Unlock the magic of photography by mastering the essentials. Your journey to capturing moments and memories begins with a single click."
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-all"></i> Get to know your camera, whether it's a DSLR, mirrorless, or a smartphone. Learn about essential settings, modes, and functions.</li>
+                    <li><i class="bi bi-check2-all"></i> Our Basic Photography Workshop provides a supportive and hands-on learning environment where you'll gain the confidence and skills needed to take your photography to the next level. </li>
+                    <li><i class="bi bi-check2-all"></i> Join us for an engaging day of exploration, creativity, and the joy of photography. You'll leave the workshop with newfound knowledge, practical skills, and a portfolio of images that reflect your unique perspective. Don't miss this opportunity to start your photographic journey with us!</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                  <img src="../images/photo.jpg" alt="" class="img-fluid">
+                </div>
+                
+              </div>
+            </div><!-- End tab content item -->
+  
+            <div class="tab-pane" id="tab-4">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                  <h3>Art from the Garden</h3>
+                  <p class="fst-italic">
+                    "Drawing is the universal language of art, and it begins with a single stroke. Join us in discovering the beauty of self-expression through the simple act of putting pencil to paper."
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-all"></i> Embark on a journey of creativity inspired by the beauty of the natural world. Join our Nature and Botanical Drawing Workshop to explore the art of drawing plants, flowers, and the intricate details of nature.</li>
+                    <li><i class="bi bi-check2-all"></i> Throughout the workshop, you'll have the opportunity to create your own botanical drawings. From delicate petals to intricate leaves, you'll breathe life into your subjects with the guidance of our experienced instructor.</li>
+                    <li><i class="bi bi-check2-all"></i> Join us for a day filled with artistic exploration, mindfulness, and the joy of capturing the intricate beauty of the natural world through the art of drawing. </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                  <img src="../images/rajasthani.jpeg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End tab content item -->
+  
+          </div>
+  
+        </div>
+      </section><!-- End Features Section -->
+  <br><br>
+  
+      <!-- ======= Recent Blog Posts Section ======= -->
+      <section id="recent-blog-posts" class="recent-blog-posts">
+        <div class="container" data-aos="fade-up">
+  
+      
+      
+    <div class=" section-header">
+          <h2>Recent Blog Posts</h2>
+          <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
+        </div>
+  
+        <div class="row gy-5">
+  
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="post-item position-relative h-100">
+  
+              <div class="post-img position-relative overflow-hidden">
+                <img src="../images/jeffhamada.jpg" class="img-fluid" alt="">
+                <span class="post-date">December 12</span>
+              </div>
+  
+              <div class="post-content d-flex flex-column">
+  
+                <h3 class="post-title">BOOOOOOOM</h3>
+  
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Jeff Hamada</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Artist</span>
+                  </div>
+                </div>
+  
+                <hr>
+  
+                <a href="blog1.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+  
+              </div>
+  
+            </div>
+          </div><!-- End post item -->
+  
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-item position-relative h-100">
+  
+              <div class="post-img position-relative overflow-hidden">
+                <img src="../images/vincent.jpg" class="img-fluid" alt="">
+                <span class="post-date">July 17</span>
+              </div>
+  
+              <div class="post-content d-flex flex-column">
+  
+                <h3 class="post-title">Canva</h3>
+  
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Vincent van Gogh</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Crafts</span>
+                  </div>
+                </div>
+  
+                <hr>
+  
+                <a href="blog2.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+  
+              </div>
+  
+            </div>
+          </div><!-- End post item -->
+  
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+  
+              <div class="post-img position-relative overflow-hidden">
+                <img src="../images/richard.jpg" class="img-fluid" alt="">
+                <span class="post-date">September 05</span>
+              </div>
+  
+              <div class="post-content d-flex flex-column">
+  
+                <h3 class="post-title">Commarts</h3>
+  
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Richard Coyne and Robert Blanchard</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Photography</span>
+                  </div>
+                </div>
+  
+                <hr>
+  
+                <a href="blog3.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+  
+              </div>
+  
+            </div>
+          </div><!-- End post item -->
+  
+        </div>
+  
+        </div>
+      </section>
+      <!-- End Recent Blog Posts Section -->
+      
+     
+  <br><br>
+  
+  <!-- footer -->
+      <footer class="bg-dark text-center text-white">
+  
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(17, 16, 16, 0.2);">
+          © 2023 RoyalArtGallery. All Rights Reserved
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="../JS/script.js"></script>
+
+<script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,  onAuthStateChanged, signOut  } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+apiKey: "AIzaSyAfvWrOS1iLpG7mgSnkNJGhxB4XhZV-HY8",
+authDomain: "registration-e58be.firebaseapp.com",
+databaseURL: "https://registration-e58be-default-rtdb.firebaseio.com",
+projectId: "registration-e58be",
+storageBucket: "registration-e58be.appspot.com",
+messagingSenderId: "641780202964",
+appId: "1:641780202964:web:29d004087991719fd8aa41"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+const auth = getAuth();
+
+// Update this to use the correct form ID
+contactform.addEventListener('submit', function (e) {
+e.preventDefault(); // Prevent the form from submitting
+
+var email = document.getElementById('email').value;
+var password = document.getElementById('password').value;
+
+// Use the correct element ID for login
+signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+
+    const dt = new Date();
+
+    update(ref(database,'users/' + user.uid),{
+       last_login : dt,
+      })
+
+window.location.assign("new.html")
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert(errorMessage);
+  });
+});
+const user = auth.currentUser;
+onAuthStateChanged(auth, (user) => {
+if (user) {
+// User is signed in, see docs for a list of available properties
+// https://firebase.google.com/docs/reference/js/auth.user
+const uid = user.uid;
+// ...
+} else {
+// User is signed out
+// ...
+}
+});
+
+const logoutButton = document.getElementById("logout");
+
+logoutButton.addEventListener("click", () => {
+  signOut(auth)
+    .then(() => {
+      // Sign-out successful.
+      alert("You have logged out.");
+      location.assign("Home.html")
+      // Redirect to a different page or perform other actions as needed
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorMessage);
+    });
+});
+</script>
+
+  </body>
+  </html>

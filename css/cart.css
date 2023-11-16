@@ -1,0 +1,47 @@
+/* Add your cart page styles here */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  margin: 20px;
+}
+
+.cart-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#cart-items {
+  /* Style the cart items list */
+}
+
+#cart-total {
+  text-align: right;
+  font-weight: bold;
+}
+
+#checkout-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#checkout-button:hover {
+  background-color: #0056b3;
+}

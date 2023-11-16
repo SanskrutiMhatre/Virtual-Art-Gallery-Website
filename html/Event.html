@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Virtual Art Gallery</title>
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/style.css">
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/event_payment.css">
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/login.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"/>
+      <style>
+      
+
+        .events-date {
+            text-align: center;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            background-color: rgba(25, 47, 89, 0.9);
+            color: #fff;
+            padding: 12px 20px 8px 20px;
+            text-transform: uppercase
+        }
+        
+        .event-time li {
+            display: inline-block;
+            margin-right: 20px
+        }
+        
+        .event-time li:last-child {
+            margin-right: 0
+        }
+        
+        .event-time li i {
+            color: #59c17a
+        }
+        
+        .event-block {
+            box-shadow: 0px 0px 16px 0px rgba(187, 187, 187, 0.48)
+        }
+        
+        .event-block ul li i {
+            color: #59c17a
+        }
+        
+        @media screen and (max-width: 1199px) {
+            .event-date {
+                padding: 10px 18px 6px 18px
+            }
+        }
+        
+        @media screen and (max-width: 575px) {
+            .event-date {
+                padding: 8px 15px 4px 15px
+            }
+            .events-date {
+                padding: 10px 15px 6px 15px
+            }
+        }
+        
+        .position-relative {
+            position: relative !important;
+        }
+        
+        .margin-40px-bottom {
+            margin-bottom: 40px;
+        }
+        .padding-60px-lr {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        
+        .margin-15px-bottom {
+            margin-bottom: 15px;
+        }
+        .font-weight-500 {
+            font-weight: 500;
+        }
+        .font-size22 {
+            font-size: 22px;
+        }
+        .text-theme-color {
+            color: #192f59;
+        }
+        .margin-10px-bottom {
+            margin-bottom: 10px;
+        }
+        .margin-10px-right {
+            margin-right: 10px;
+        }
+              </style>
+  </head>
+<body>
+      <nav>
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo" />
+        <h1>ART GALLERY</h1>
+      </div>
+      <ul class="navlinks">
+        <li>
+          <a href="Home.html"> HOME</a>
+        </li>
+        <li>
+          <a href="Exhibition.html"> EXHIBITIONS</a>
+        </li>
+        <li>
+          <a href="Event.html"> EVENTS</a>
+        </li>
+        <li>
+          <a href="Workshop.html"> WORKSHOPS</a>
+        </li>
+        <li>
+          <a href="Blog.html">BLOG</a>
+        </li>
+        <li>
+          <a href="Contactus.html">CONTACT US
+
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="cart-profile">
+
+  
+  <a href="#">
+        <button type="button" class="sign-in-btn">SHOP</button>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+
+    
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="Home.html">HOME</a>
+        </li>
+        <li>
+          <a href="Exhibition.html"> EXHIBITIONS</a>
+        </li>
+        <li>
+          <a href="Event.html"> EVENTS</a>
+        </li>
+        <li>
+          <a href="Workshop.html">WORKSHOPS</a>
+          </li>
+          <li>
+          <a href="Blog.html">BLOG</a>
+        </li> 
+        <li>
+            <a href="Contactus.html">CONTACT US</a>
+        </li>
+       <li>
+        <a href="#">
+        <button type="button" class="signup-btn">SHOP</button>
+       </a>
+    </li> 
+
+      </ul>
+    </div>
+
+   
+
+        
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('../images/H1.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Events</h2>
+        <ol>
+          <li><a href="Home.html">Home</a></li>
+          <li>Events</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+<br><br>
+<div class="container">
+    <!-- start event block -->
+    <div class="section-header">
+			<h2>Upcoming Events</h2>
+			<p>Explore our virtual gallery's dynamic events. Join us in celebrating art, culture, and creativity from the comfort of your own space. Discover upcoming exhibitions, artist talks, workshops, and more.</p>
+		  </div>
+        
+    <div class="row align-items-center event-block no-gutters margin-40px-bottom">
+        <div class="col-lg-5 col-sm-12">
+            <div class="position-relative">
+                <img src="../images/MarineDrive.jpg" alt="">
+                <div class="events-date">
+                    <div class="font-size28">10</div>
+                    <div class="font-size14">Mar</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+            <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500"><a href="event1.html" class="text-theme-color">Positive Vibes Cascade</a></h5>
+                <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                    <li><i class="far fa-clock margin-10px-right"></i> 01:30 PM - 03:00 PM</li>
+                    <li><i class="fas fa-user margin-5px-right"></i> Artist : John Sminth</li>
+                </ul>
+                <p>Join us in a joyous celebration of positivity and its incredible ripple effect. 'Positive Vibes Cascade' is an uplifting event that explores the transformative power of a positive attitude, inspiring a chain reaction of optimism, good thoughts, and meaningful outcomes in our lives.</p>
+                <a class="butn small margin-10px-top md-no-margin-top" href="event1.html">Read More <i class="fas fa-long-arrow-alt-right margin-10px-left"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- end event block -->
+
+
+    <!-- start event block -->
+    <div class="row align-items-center event-block no-gutters margin-40px-bottom">
+        <div class="col-lg-5 col-sm-12">
+            <div class="position-relative">
+                <img src="../images/Hit-Hari-.jpeg" alt="">
+                <div class="events-date">
+                    <div class="font-size28">20</div>
+                    <div class="font-size14">Feb</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+            <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500"><a href="event2.html" class="text-theme-color">Positivity Amplified</a></h5>
+                <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                    <li><i class="far fa-clock margin-10px-right"></i> 4:00 PM - 5:30 PM</li>
+                    <li><i class="fas fa-user margin-5px-right"></i> Artist : Avil Mex</li>
+                </ul>
+                <p>Join us for an inspiring event where the power of positivity is explored. 'Positivity Amplified' is an uplifting experience that delves into how a positive mindset can create a cascading effect, leading to success, growth, and a brighter future.</p>
+                <a class="butn small margin-10px-top md-no-margin-top" href="#">Read More <i class="fas fa-long-arrow-alt-right margin-10px-left"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- end event block -->
+
+
+    <!-- start event block -->
+    <div class="row align-items-center event-block no-gutters">
+        <div class="col-lg-5 col-sm-12">
+            <div class="position-relative">
+                <img src="../images/Madan.jpg" alt="">
+                <div class="events-date">
+                    <div class="font-size28">10</div>
+                    <div class="font-size14">Oct</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+            <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500"><a href="event3.html" class="text-theme-color">Ripple Effect of Positivity</a></h5>
+                <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                    <li><i class="far fa-clock margin-10px-right"></i> 11:00 AM - 12:00 PM</li>
+                    <li><i class="fas fa-map-marker-alt margin-5px-right"></i> Artist : Mavil Aven</li>
+                </ul>
+                <p>Join us for an inspirational event that explores the incredible impact of positivity. 'Ripple Effect of Positivity' reveals how a positive attitude sets in motion a cascade of uplifting thoughts, actions, and achievements, shaping a world brimming with success and optimism.</p>
+                <a class="butn small margin-10px-top md-no-margin-top" href="#">Read More <i class="fas fa-long-arrow-alt-right margin-10px-left"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- end event block -->
+
+</div>
+<br><br>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 RoyalArtGallery. All Rights Reserved
+  </div>
+  <!-- Copyright -->
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="../JS/script.js"></script>
+<script src="../JS/scripts.js"></script>
+</body>
+</html>

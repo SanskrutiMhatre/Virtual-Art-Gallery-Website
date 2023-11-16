@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Virtual Art Gallery</title>
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/style.css">
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/event_payment.css">
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/Upexhibition.css">
+   <link rel="stylesheet" type="text/css" target="_blank" href="/css/login.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"/>
+      <style>
+        .about .content h3 {
+          font-weight: 900;
+          font-size: 26px;
+        }
+        
+        .about .content ul {
+          list-style: none;
+          padding: 0;
+        }
+        
+        .about .content ul li {
+          padding-bottom: 10px;
+        }
+        
+        .about .content ul i {
+          font-size: 20px;
+          padding-right: 4px;
+        
+        }
+        
+        .about .content p:last-child {
+          margin-bottom: 0;
+        }
+        
+        </style>
+  </head>
+<body>
+      <nav>
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo" />
+        <h1>ART GALLERY</h1>
+      </div>
+      <ul class="navlinks">
+        <li>
+          <a href="Home.html"> HOME</a>
+        </li>
+        <li>
+          <a href="Exhibition.html"> EXHIBITIONS</a>
+        </li>
+        <li>
+          <a href="Event.html"> EVENTS</a>
+        </li>
+        <li>
+          <a href="Workshop.html"> WORKSHOPS</a>
+        </li>
+        <li>
+          <a href="Blog.html">BLOG</a>
+        </li>
+        <li>
+          <a href="Contactus.html">CONTACT US
+
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="cart-profile">
+
+  
+  <a href="#">
+        <button type="button" class="sign-in-btn">SHOP</button>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+
+    
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="Home.html">HOME</a>
+        </li>
+        <li>
+          <a href="Exhibition.html"> EXHIBITIONS</a>
+        </li>
+        <li>
+          <a href="Event.html"> EVENTS</a>
+        </li>
+        <li>
+          <a href="Workshop.html">WORKSHOPS</a>
+          </li>
+          <li>
+          <a href="Blog.html">BLOG</a>
+        </li>
+        <li>
+            <a href="Contactus.html">CONTACT US</a>
+          </li>
+       <li>
+        <a href="#">
+       <button type="button" class="signup-btn">SHOP</button>
+       </a>
+    </li> 
+
+      </ul>
+    </div>
+
+ 
+
+
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/images/H1.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>EXHIBITION</h2>
+        <ol>
+          <li><a href="Exhibition.html">EXHIBITIONS</a></li>
+          <li>EXHIBITION</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+  <br>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center">
+
+      <h1>ComingSoon</h1>
+      <h2>We're working hard to improve our website and we'll ready to launch after</h2>
+      <div class="countdown d-flex justify-content-center" data-count="2023/12/5">
+        <div>
+          <h3>%d</h3>
+          <h4>Days</h4>
+        </div>
+        <div>
+          <h3>%h</h3>
+          <h4>Hours</h4>
+        </div>
+        <div>
+          <h3>%m</h3>
+          <h4>Minutes</h4>
+        </div>
+        <div>
+          <h3>%s</h3>
+          <h4>Seconds</h4>
+        </div>
+      </div>
+      <div class="subscribe">
+        <h4>Subscribe now to get the latest updates!</h4>
+        <form class="subscribe_form" action="#" onsubmit="sendEmail(event)"role="form" class="php-email-form">
+          <div class="subscribe-form">
+          <input class="email" type="email"  id="email" placeholder="Enter your email...">
+          <button type="submit">Subscribe</button>
+          </div>
+        </form>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+          function sendEmail(e) {
+            e.preventDefault();
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "mhatresanskruti42@gmail.com",
+            Password : "3E216C9D14E8C8475B3A1F7A4F59B8EEBCC6",
+            To : document.getElementById('email').value,
+            From : "mhatresanskruti42@gmail.com",
+            Subject : "Hello, This Remainer for Coming Exhibition",
+            Body : "We're thrilled to remind you about our highly anticipated exhibition, scheduled for 28/11/2023 at Mumbai. With just a few days to go, we're eager to share this cultural journey with you. This event promises to be a captivating showcase of artistic talent and creativity, featuring a diverse range of artworks and interactive displays. Don't forget to mark your calendar, invite your friends and family, and make plans to immerse yourself in a world of art and culture on 28 NOV 2023. We can't wait to welcome you and make this exhibition an unforgettable experience for all."
+    
+            }).then(
+              message => alert(message)
+            );
+
+            return alert("You have Subscribed Successfully");
+          }
+
+        </script>
+      </div>
+
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About EXHIBITION</h2>
+         
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="/images/frame.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    </div></header>
+<Br>
+
+    
+        
+<!-- footer -->
+<footer class="bg-dark text-center text-white">
+
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 RoyalArtGallery. All Rights Reserved
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script>
+    (function() {
+      const countdown = document.querySelector('.countdown');
+      const countDownDate = new Date(countdown.getAttribute('data-count')).getTime();
+  
+      function updateCountdown() {
+        const currentDate = new Date().getTime();
+        const timeLeft = countDownDate - currentDate;
+  
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+  
+        countdown.innerHTML = `
+          <div>
+            <h3>${days}</h3>
+            <h4>Days</h4>
+          </div>
+          <div>
+            <h3>${hours}</h3>
+            <h4>Hours</h4>
+          </div>
+          <div>
+            <h3>${minutes}</h3>
+            <h4>Minutes</h4>
+          </div>
+          <div>
+            <h3>${seconds}</h3>
+            <h4>Seconds</h4>
+          </div>
+        `;
+  
+        if (timeLeft <= 0) {
+          // Redirect to another page when the countdown finishes
+          window.location.href = 'try.html';
+        }
+      }
+  
+      updateCountdown();
+      setInterval(updateCountdown, 500);
+    })();
+    
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <script src="/JS/script.js"></script>
+  
+  
+  </body>
+  </html>
+  
